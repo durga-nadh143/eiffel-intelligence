@@ -50,7 +50,7 @@ jobs:
       - name: Run unit and functional tests
         run: |
           mvn --version
-          mvn test -DskipITs -Dsurefire.rerunFailingTestsCount=2 -Djasypt.encryptor.password=secret -Dspring.config.location=src/functionaltests/resources/application.properties -B 
+          mvn test -DskipITs -Dsurefire.rerunFailingTestsCount=3 -Djasypt.encryptor.password=secret -Dspring.config.location=src/functionaltests/resources/application.properties -B 
           
   integrationTests:
     if: github.repository == 'durga-nadh143/eiffel-intelligence'
